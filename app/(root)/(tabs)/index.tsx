@@ -55,6 +55,7 @@ export default function Index() {
         contentContainerClassName="pb-32"
         columnWrapperClassName="flex gap-5 px-5"
         showsVerticalScrollIndicator={false}
+        bounces={false}
         ListEmptyComponent={
           loading ? (
             <ActivityIndicator size='large' className="text-primary-300 mt-5"/>
@@ -103,6 +104,7 @@ export default function Index() {
                   )}
                   keyExtractor={(item) => item.$id}
                   horizontal
+                  bounces={false}
                   showsHorizontalScrollIndicator={false}
                   contentContainerClassName="flex gap-5 mt-5"
                 />
